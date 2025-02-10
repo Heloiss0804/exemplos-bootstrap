@@ -1,52 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap - Design Responsivo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-<div class="container">
-    <h1 class="text-center">Recursos para design responsivo</h1>
-    <hr>
+    <div class="container">
+        <h1 class="text-center">Recursos para design responsivo</h1>
+        <hr>
 
-    <h2>Exemplo 1: aplicando colunas no grid (auto-layout)</h2>
+        <h2>Exemplo 1: aplicando colunas no grid (auto-layout)</h2>
 
-    <!-- A classe "row" indica que ali é uma linha(row)
+        <!-- A classe "row" indica que ali é uma linha(row)
      que terá colunas no layout -->
- <div class="row gx-2">
+        <div class="row gx-2">
 
-    <!-- A classe "col" indica que esta é uma coluna do layout -->
-     <div class="col">
-        <p class="bg-primary-subtle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, possimus porro qui rerum vero voluptatibus et modi doloribus magnam corrupti, magni ab quae? Ex iste sed voluptatem pariatur odio enim.</p>
-     </div>
-     <div class="col">
-        <p class="bg-success-subtle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id eaque voluptatibus distinctio, aliquid quo deserunt nisi repellat veniam aperiam, omnis a repudiandae fuga rem atque vitae dolorem deleniti molestiae vel?</p>
-     </div>
- </div>  <!-- /fim div exemplo 1-->
+            <!-- A classe "col" indica que esta é uma coluna do layout -->
+            <div class="col">
+                <p class="bg-primary-subtle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, possimus
+                    porro qui rerum vero voluptatibus et modi doloribus magnam corrupti, magni ab quae? Ex iste sed
+                    voluptatem pariatur odio enim.</p>
+            </div>
+            <div class="col">
+                <p class="bg-success-subtle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id eaque
+                    voluptatibus distinctio, aliquid quo deserunt nisi repellat veniam aperiam, omnis a repudiandae fuga
+                    rem atque vitae dolorem deleniti molestiae vel?</p>
+            </div>
+        </div> <!-- /fim div exemplo 1-->
 
- <hr>
- <h2>Exemplo 2 : colunas com tamanhos diferentes</h2>
- <div class="row gx-1">
-    <div class="col-4">
-        <h3 class="text-center">Coluna A</h3>
-        <p class="bg-danger-subtle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eos harum itaque, ab laudantium eveniet iure ipsum sapiente, in quia voluptates est sint explicabo similique aliquid a velit blanditiis ducimus!</p>
-    </div>
+        <hr>
+        <h2>Exemplo 2 : colunas com tamanhos diferentes</h2>
+        <div class="row gx-1">
+            <div class="col-4">
+                <h3 class="text-center">Coluna A</h3>
+                <p class="bg-danger-subtle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eos harum
+                    itaque, ab laudantium eveniet iure ipsum sapiente, in quia voluptates est sint explicabo similique
+                    aliquid a velit blanditiis ducimus!</p>
+            </div>
 
-    <div class="col-8">
-        <h3 class="text-center">Coluna B</h3>
-        <p class="bg-dark-subtle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, quis iusto. Officia adipisci nulla beatae odit, optio, unde sapiente velit nihil non et debitis! Dolorum ex culpa nemo vitae minus?</p>
-        <p class="bg-dark-subtle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit nostrum modi sed, ab explicabo quas corrupti doloremque nemo totam labore magnam quae aspernatur officia vel perspiciatis unde, deleniti corporis?</p>
-    </div>
- </div>
+            <div class="col-8">
+                <h3 class="text-center">Coluna B</h3>
+                <p class="bg-dark-subtle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, quis iusto.
+                    Officia adipisci nulla beatae odit, optio, unde sapiente velit nihil non et debitis! Dolorum ex
+                    culpa nemo vitae minus?</p>
+                <p class="bg-dark-subtle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit nostrum
+                    modi sed, ab explicabo quas corrupti doloremque nemo totam labore magnam quae aspernatur officia vel
+                    perspiciatis unde, deleniti corporis?</p>
+            </div>
+        </div> <!-- /fim da div exemplo 2-->
+
+        <hr>
+
+        <h2>Exemplo 3: colunas de acordo com a tela</h2>
+        <p>Usando as classes de <b>breakponts</b>:
+            sm(>=576px), md(>= 768px), lg(>=992px), xl (>=1200px) e xxl (>=1400px)
+        </p>
+
+        <div class="row gx-1">
+            <div class="col-md-7">
+                <p class="bg-danger-subtle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nemo nisi optio saepe qui maxime doloremque omnis esse! Dolorem voluptatem accusantium earum architecto tempore perferendis nesciunt ad delectus tenetur dolores?</p>
+            </div>
+
+            <div class="col-md-5">
+                <p class="bg-warning-subtle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime sequi suscipit, quo sit voluptates nulla, mollitia alias libero, nihil vero iste deserunt temporibus dolore assumenda? Tenetur placeat enim aperiam.</p>
+            </div>
+        </div>
 
 
- 
-
-</div> <!--/fim div container-->
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+
+    </div> <!--/fim div container-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
